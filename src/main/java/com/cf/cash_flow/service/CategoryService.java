@@ -16,7 +16,7 @@ public class CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
-    public List<Category> list() {
+    public List<Category> listAll() {
         return categoryRepository.findAll();
     }
 
@@ -39,11 +39,11 @@ public class CategoryService {
         return category;
     }
 
-    public List<Category> getByName(String categoryName) {
+    public List<Category> listByName(String categoryName) {
         return categoryRepository.findByCategoryNameContainingIgnoreCase(categoryName);
     }
 
-    public List<Category> getByUserId(Long userId) {
+    public List<Category> listByUserId(Long userId) {
         return categoryRepository.findByUserId(userId);
     }
 

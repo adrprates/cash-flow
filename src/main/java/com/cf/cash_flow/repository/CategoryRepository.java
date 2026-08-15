@@ -1,6 +1,5 @@
 package com.cf.cash_flow.repository;
 
-
 import com.cf.cash_flow.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
