@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
-    List<Account> findByUserId(Long userId);
     List<Account> findByAccountNameContainingIgnoreCase(String accountName);
+    List<Account> findByUserId(Long userId);
     boolean existsByAccountNameAndUserId(String accountName, Long userId);
 }
